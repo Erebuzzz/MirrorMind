@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+}
+
+.dark {
+  --background: #0f0f0f;
+  --foreground: #ededed;
+  --card-bg: #1a1a1a;
+  --border: #2d2d2d;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #faf7fe 0%, #f3edfc 50%, #e9defa 100%);
+}
+
+.dark .gradient-bg {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
